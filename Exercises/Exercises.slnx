@@ -1,1 +1,9 @@
-<Solution />
+<Solution>
+  <Folder Name="/32/">
+    <Project Path="exercise32/exercise32.csproj" Id="2c68db58-39a5-4921-a674-f2cf2031b460" />
+  </Folder>
+  <Folder Name="/33/">
+    <Project Path="exercise33/exercise33.csproj" Id="59f6d6a7-7fab-4801-aa5d-b6a2d0b47757" />
+  </Folder>
+  <Project Path="Exercises/Exercises.csproj" />
+</Solution>
