@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace exercise32
+﻿namespace exercise32
 {
     class Program
     {
@@ -8,19 +6,23 @@ namespace exercise32
         {
             Console.Write("Ingrese el tamaño del rombo: ");
 
-            string input = Console.ReadLine() ?? "";
+            string input = Console.ReadLine()!;
             int size;
 
             if (int.TryParse(input, out size))
             {
-                if (size > 0)
+                if (size > 0 && size % 2 != 0)
                 {
                     Rhombus myRhombus = new Rhombus(size);
                     myRhombus.Print();
                 }
+                else if (size % 2 == 0)
+                {
+                    Console.WriteLine("Error: El tamaño del rombo tiene que ser un número impar");
+                }
                 else
                 {
-                    Console.WriteLine("Por favor, ingrese un número mayor a 0.");
+                    Console.WriteLine("Error: Por favor, ingrese un número mayor a 0.");
                 }
             }
             else

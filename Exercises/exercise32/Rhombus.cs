@@ -18,7 +18,6 @@
         private int ValidateSize(int size)
         {
             if (size < 1) return 1;
-            if (size % 2 == 0) return size + 1;
             return size;
         }
 
